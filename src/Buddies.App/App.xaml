@@ -27,14 +27,14 @@
 					
 						<Image
 							Source="waves_high.svg"
-							Aspect="AspectFit"
+							Aspect="AspectFill"
 							Opacity="0.35"
 							VerticalOptions="End"
 							Grid.Row="0" />
 
 						<Image
 							Source="waves_low.svg"
-							Aspect="AspectFit"
+							Aspect="AspectFill"
 							Opacity="0.25"
 							VerticalOptions="End"
 							Grid.Row="0" />

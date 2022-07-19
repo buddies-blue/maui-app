@@ -7,22 +7,18 @@
 	
 	<Application.Resources>
 		<ResourceDictionary>
-			
+
 			<ResourceDictionary.MergedDictionaries>
 				<ResourceDictionary Source="Resources/Styles/Colors.xaml" />
 				<ResourceDictionary Source="Resources/Styles/Styles.xaml" />
 			</ResourceDictionary.MergedDictionaries>
 
 			<ControlTemplate x:Key="WavesControlTemplate">
-
 				<ScrollView>
 					<Grid>
-
 						<Grid.RowDefinitions>
-
 							<RowDefinition Height="75"></RowDefinition>
 							<RowDefinition Height="*"></RowDefinition>
-
 						</Grid.RowDefinitions>
 					
 						<Image
@@ -39,13 +35,9 @@
 							VerticalOptions="End"
 							Grid.Row="0" />
 
-						<ContentPresenter
-							Grid.Row="1">
-
+						<ContentPresenter Grid.Row="1">
 							<ContentPresenter.Background>
-
-								<LinearGradientBrush
-									EndPoint="0, 1">
+								<LinearGradientBrush EndPoint="0, 1">
 
 									<!-- Formula: (1 - ((1 - A) * (1 - B))) * 255 -->
 									<GradientStop

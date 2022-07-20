@@ -3,6 +3,7 @@
 	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:selector="clr-namespace:Buddies.App.Layout.Logs.DataTemplateSelectors"
+	xmlns:section="clr-namespace:Buddies.App.Layout.Logs.Sections"
     x:Class="Buddies.App.Layout.Logs.Pages.LogPage"
 	x:Name="this"
     Title="Log">
@@ -19,6 +20,9 @@
 					FontSize="18"
 					FontAttributes="Bold"
 					TextTransform="Uppercase" />
+				
+				<!-- Content -->
+				<section:GeneralLogSection />
 
 			</VerticalStackLayout>
 		</DataTemplate>
@@ -34,6 +38,9 @@
 					FontAttributes="Bold"
 					TextTransform="Uppercase" />
 
+				<!-- Content -->
+				<section:ConditionsLogSection />
+
 			</VerticalStackLayout>
 		</DataTemplate>
 
@@ -48,6 +55,9 @@
 					FontAttributes="Bold"
 					TextTransform="Uppercase" />
 
+				<!-- Content -->
+				<section:EquipmentLogSection />
+
 			</VerticalStackLayout>
 		</DataTemplate>
 
@@ -61,6 +71,9 @@
 					FontSize="18"
 					FontAttributes="Bold"
 					TextTransform="Uppercase" />
+
+				<!-- Content -->
+				<section:ExperienceLogSection />
 
 			</VerticalStackLayout>
 		</DataTemplate>

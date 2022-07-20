@@ -11,7 +11,7 @@
 
 		<!-- General -->
 		<DataTemplate x:Key="GeneralDataTemplate">
-			<VerticalStackLayout Padding="30, 0">
+			<VerticalStackLayout Padding="30, 10">
 
 				<!-- Title -->
 				<Label
@@ -25,7 +25,7 @@
 
 		<!-- Conditions -->
 		<DataTemplate x:Key="ConditionsDataTemplate">
-			<VerticalStackLayout Padding="30, 0">
+			<VerticalStackLayout Padding="30, 10">
 
 				<!-- Title -->
 				<Label
@@ -39,7 +39,7 @@
 
 		<!-- Equipment -->
 		<DataTemplate x:Key="EquipmentDataTemplate">
-			<VerticalStackLayout Padding="30, 0">
+			<VerticalStackLayout Padding="30, 10">
 
 				<!-- Title -->
 				<Label
@@ -53,7 +53,7 @@
 
 		<!-- Experience -->
 		<DataTemplate x:Key="ExperienceDataTemplate">
-			<VerticalStackLayout Padding="30, 0">
+			<VerticalStackLayout Padding="30, 10">
 
 				<!-- Title -->
 				<Label
@@ -75,10 +75,16 @@
 		
 	</ContentPage.Resources>
 	
-	<VerticalStackLayout BindingContext="{x:Reference this}">
+	<Grid BindingContext="{x:Reference this}">
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="30"></RowDefinition>
+		</Grid.RowDefinitions>
 
 		<!-- Carousel -->
 		<CarouselView
+			Grid.Row="0"
 			ItemsSource="{Binding Sections}"
 			ItemTemplate="{StaticResource CarouselViewDataTemplateSelector}"
 			IndicatorView="CarouselIndicatorView"
@@ -88,9 +94,10 @@
 		<!-- Indicator -->
 		<IndicatorView
 			x:Name="CarouselIndicatorView"
+			Grid.Row="1"
 			IndicatorsShape="Circle"
 			HorizontalOptions="Center" />
 
-	</VerticalStackLayout>
+	</Grid>
 	
 </ContentPage>

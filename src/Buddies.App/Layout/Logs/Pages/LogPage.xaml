@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:selector="clr-namespace:Buddies.App.Layout.Logs.DataTemplateSelectors"
+    x:Class="Buddies.App.Layout.Logs.Pages.LogPage"
+	x:Name="this"
+    Title="Log">
+
+	<ContentPage.Resources>
+
+		<!-- General -->
+		<DataTemplate x:Key="GeneralDataTemplate">
+			<VerticalStackLayout Padding="30, 0">
+
+				<!-- Title -->
+				<Label
+					Text="General"
+					FontSize="18"
+					FontAttributes="Bold"
+					TextTransform="Uppercase" />
+
+			</VerticalStackLayout>
+		</DataTemplate>
+
+		<!-- Conditions -->
+		<DataTemplate x:Key="ConditionsDataTemplate">
+			<VerticalStackLayout Padding="30, 0">
+
+				<!-- Title -->
+				<Label
+					Text="Conditions"
+					FontSize="18"
+					FontAttributes="Bold"
+					TextTransform="Uppercase" />
+
+			</VerticalStackLayout>
+		</DataTemplate>
+
+		<!-- Equipment -->
+		<DataTemplate x:Key="EquipmentDataTemplate">
+			<VerticalStackLayout Padding="30, 0">
+
+				<!-- Title -->
+				<Label
+					Text="Equipment"
+					FontSize="18"
+					FontAttributes="Bold"
+					TextTransform="Uppercase" />
+
+			</VerticalStackLayout>
+		</DataTemplate>
+
+		<!-- Experience -->
+		<DataTemplate x:Key="ExperienceDataTemplate">
+			<VerticalStackLayout Padding="30, 0">
+
+				<!-- Title -->
+				<Label
+					Text="Experience"
+					FontSize="18"
+					FontAttributes="Bold"
+					TextTransform="Uppercase" />
+
+			</VerticalStackLayout>
+		</DataTemplate>
+		
+		<!-- Data Template Selector -->
+		<selector:LogSectionDataTemplateSelector
+			x:Key="CarouselViewDataTemplateSelector"
+			GeneralDataTemplate="{StaticResource GeneralDataTemplate}"
+			ConditionsDataTemplate="{StaticResource ConditionsDataTemplate}"
+			EquipmentDataTemplate="{StaticResource EquipmentDataTemplate}"
+			ExperienceDataTemplate="{StaticResource ExperienceDataTemplate}" />
+		
+	</ContentPage.Resources>
+	
+	<VerticalStackLayout BindingContext="{x:Reference this}">
+
+		<!-- Carousel -->
+		<CarouselView
+			ItemsSource="{Binding Sections}"
+			ItemTemplate="{StaticResource CarouselViewDataTemplateSelector}"
+			IndicatorView="CarouselIndicatorView"
+			Loop="False"
+			HorizontalOptions="CenterAndExpand" />
+		
+		<!-- Indicator -->
+		<IndicatorView
+			x:Name="CarouselIndicatorView"
+			IndicatorsShape="Circle"
+			HorizontalOptions="Center" />
+
+	</VerticalStackLayout>
+	
+</ContentPage>

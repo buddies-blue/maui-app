@@ -44,4 +44,16 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Layout\Logs\Pages\LogPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Layout\Logs\Pages\LogPage.xaml.cs">
+	    <DependentUpon>LogPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
 </Project>

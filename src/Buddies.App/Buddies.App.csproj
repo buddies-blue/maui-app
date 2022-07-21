@@ -50,6 +50,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Layout\Controls\ControlGroup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Layout\Logs\Pages\LogPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

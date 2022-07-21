@@ -2,13 +2,39 @@
 <ContentView
 	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:control="clr-namespace:Buddies.App.Layout.Controls"
     x:Class="Buddies.App.Layout.Logs.Sections.GeneralLogSection">
 	
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+		<!-- Date -->
+		<DatePicker />
+
+		<!-- Time -->
+		<TimePicker />
+
+		<!-- Dive Site -->
+		<Entry />
+		
+		<!-- Add Interactive Map -->
+
+		<!-- Buddies -->
+		<Entry />
+
+		<!-- Dive Center -->
+		<Entry />
+
+		<!-- Max Depth -->
+		<Entry />
+
+		<!-- Bottom Time -->
+		<Entry />
+		
+		<!-- Type of Entry -->
+		<control:MultiSelect
+			Title="Type of Entry"
+			Subtitle="How did you get into the water?" />
+
+	</VerticalStackLayout>
 	
 </ContentView>

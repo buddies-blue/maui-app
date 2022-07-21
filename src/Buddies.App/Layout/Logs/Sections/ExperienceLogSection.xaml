@@ -2,13 +2,19 @@
 <ContentView
 	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:control="clr-namespace:Buddies.App.Layout.Controls"
     x:Class="Buddies.App.Layout.Logs.Sections.ExperienceLogSection">
 	
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+		
+		<!-- Notes -->
+		<Editor />
+
+		<!-- Rating -->
+		<control:MultiSelect
+			Title="Rating"
+			Subtitle="How would you rate the dive?" />
+
+	</VerticalStackLayout>
 
 </ContentView>

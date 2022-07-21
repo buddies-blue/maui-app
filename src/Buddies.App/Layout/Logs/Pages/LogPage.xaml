@@ -6,6 +6,8 @@
 	xmlns:section="clr-namespace:Buddies.App.Layout.Logs.Sections"
     x:Class="Buddies.App.Layout.Logs.Pages.LogPage"
 	x:Name="this"
+	BindingContext="{x:Reference this}"
+	ControlTemplate="{StaticResource WavesControlTemplate}"
     Title="Log">
 
 	<ContentPage.Resources>
@@ -22,7 +24,7 @@
 					TextTransform="Uppercase" />
 				
 				<!-- Content -->
-				<section:GeneralLogSection />
+				<section:GeneralLogSection Log="{Binding Log}" />
 
 			</VerticalStackLayout>
 		</DataTemplate>
@@ -39,7 +41,7 @@
 					TextTransform="Uppercase" />
 
 				<!-- Content -->
-				<section:ConditionsLogSection />
+				<section:ConditionsLogSection Log="{Binding Log}" />
 
 			</VerticalStackLayout>
 		</DataTemplate>
@@ -56,7 +58,7 @@
 					TextTransform="Uppercase" />
 
 				<!-- Content -->
-				<section:EquipmentLogSection />
+				<section:EquipmentLogSection Log="{Binding Log}" />
 
 			</VerticalStackLayout>
 		</DataTemplate>
@@ -73,7 +75,7 @@
 					TextTransform="Uppercase" />
 
 				<!-- Content -->
-				<section:ExperienceLogSection />
+				<section:ExperienceLogSection Log="{Binding Log}" />
 
 			</VerticalStackLayout>
 		</DataTemplate>
@@ -88,7 +90,7 @@
 		
 	</ContentPage.Resources>
 	
-	<Grid BindingContext="{x:Reference this}">
+	<Grid>
 
 		<Grid.RowDefinitions>
 			<RowDefinition Height="*"></RowDefinition>

@@ -46,7 +46,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Layout\Components\MultiSelect.xaml">
+	  <MauiXaml Update="Layout\Controls\MultiSelect.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

@@ -1,7 +1,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 
-namespace Buddies.App.Layout.Components;
+namespace Buddies.App.Layout.Controls;
 
 public partial class MultiSelect : ContentView
 {

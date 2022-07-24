@@ -28,7 +28,7 @@
 			Subtitle="What kind of cylinder did you use?" />
 
 		<!-- Cylinder Size -->
-		<Entry />
+		<Entry Placeholder="Cylinder Size" />
 		
 		<!-- Gas Mixture -->
 		<control:MultiSelect
@@ -36,25 +36,25 @@
 			Subtitle="What kind of gas mixture did you use?" />
 
 		<!-- Oxygen -->
-		<Entry />
+		<Entry Placeholder="Oxygen" />
 
 		<!-- Nitrogen -->
-		<Entry />
+		<Entry Placeholder="Nitrogen" />
 
 		<!-- Helium -->
-		<Entry />
+		<Entry Placeholder="Helium" />
 
 		<!-- Hydrogen -->
-		<Entry />
+		<Entry Placeholder="Hydrogen" />
 
 		<!-- Starting Pressure -->
-		<Entry />
+		<Entry Placeholder="Starting Pressure" />
 
 		<!-- Ending Pressure -->
-		<Entry />
+		<Entry Placeholder="Ending Pressure" />
 
 		<!-- Amount Used -->
-		<Entry />
+		<Entry IsReadOnly="True" />
 
 	</VerticalStackLayout>
 	

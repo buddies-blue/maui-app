@@ -8,7 +8,7 @@
     <VerticalStackLayout>
 		
 		<!-- Notes -->
-		<Editor />
+		<Editor Placeholder="Notes" />
 
 		<!-- Rating -->
 		<control:MultiSelect

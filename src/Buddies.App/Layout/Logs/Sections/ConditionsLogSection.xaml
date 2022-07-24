@@ -13,13 +13,13 @@
 			Subtitle="How was the weather?" />
 		
 		<!-- Air Temperature -->
-		<Entry />
+		<Entry Placeholder="Air Temperature" />
 
 		<!-- Surface Temperature -->
-		<Entry />
+		<Entry Placeholder="Surface Temperature" />
 
 		<!-- Bottom Temperature -->
-		<Entry />
+		<Entry Placeholder="Bottom Temperature" />
 		
 		<!-- Type of Water -->
 		<control:MultiSelect

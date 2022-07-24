@@ -7,34 +7,73 @@
 	
     <VerticalStackLayout>
 
-		<!-- Date -->
-		<DatePicker />
+		<!-- Date/Time -->
+		<control:ControlGroup
+			Title="Date &amp; Time"
+			Subtitle="When did the dive take place?">
+			
+			<Grid>
+				
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
 
-		<!-- Time -->
-		<TimePicker />
+				<!-- Date -->
+				<DatePicker Grid.Column="0" />
+
+				<!-- Time -->
+				<TimePicker Grid.Column="1" />
+
+			</Grid>			
+		</control:ControlGroup>
 
 		<!-- Dive Site -->
-		<Entry />
+		<control:ControlGroup
+			Title="Dive Site"
+			Subtitle="Where did the dive take place?">
+
+			<!-- Dive Site -->
+			<Entry Placeholder="Dive Site" />
+
+			<!-- Add Interactive Map -->
+
+		</control:ControlGroup>
+
+		<control:ControlGroup
+			Title="Dive Team"
+			Subtitle="With whom did you dive?">
+
+			<VerticalStackLayout>
+
+				<!-- Buddies -->
+				<Entry Placeholder="Dive Buddy" />
+
+				<!-- Dive Center -->
+				<Entry Placeholder="Dive Center" />
+
+			</VerticalStackLayout>
+		</control:ControlGroup>
 		
-		<!-- Add Interactive Map -->
+		<control:ControlGroup
+			Title="Dive Statistics"
+			Subtitle="How deep did you go?">
 
-		<!-- Buddies -->
-		<Entry />
+			<VerticalStackLayout>
 
-		<!-- Dive Center -->
-		<Entry />
+				<!-- Max Depth -->
+				<Entry Placeholder="Max Depth" />
 
-		<!-- Max Depth -->
-		<Entry />
+				<!-- Bottom Time -->
+				<Entry Placeholder="Bottom Time" />
 
-		<!-- Bottom Time -->
-		<Entry />
+			</VerticalStackLayout>
+		</control:ControlGroup>
 		
 		<!-- Type of Entry -->
 		<control:MultiSelect
 			Title="Type of Entry"
 			Subtitle="How did you get into the water?" />
-
-	</VerticalStackLayout>
-	
+		
+	</VerticalStackLayout>	
 </ContentView>

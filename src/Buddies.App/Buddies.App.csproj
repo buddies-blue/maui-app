@@ -46,37 +46,43 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Buddies.Logs.Abstractions\Buddies.Logs.Abstractions.csproj" />
+		<ProjectReference Include="..\Buddies.Logs.Abstractions\Buddies.Logs.Abstractions.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Layout\Controls\ControlGroup.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Layout\Logs\Pages\LogPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Layout\Logs\Sections\ConditionsLogSection.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Layout\Logs\Sections\EquipmentLogSection.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Layout\Logs\Sections\ExperienceLogSection.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Layout\Logs\Sections\GeneralLogSection.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Layout\Controls\MultiSelect.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+		<MauiXaml Update="Layout\Controls\ControlGroup.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Layout\Logs\Pages\LogPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Layout\Logs\Sections\ConditionsLogSection.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Layout\Logs\Sections\EquipmentLogSection.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Layout\Logs\Sections\ExperienceLogSection.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Layout\Logs\Sections\GeneralLogSection.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Layout\Controls\MultiSelect.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Resources\Templates\ControlGroupTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Resources\Templates\WavesTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Layout\Logs\Pages\LogPage.xaml.cs">
-	    <DependentUpon>LogPage.xaml</DependentUpon>
-	  </Compile>
+		<Compile Update="Layout\Logs\Pages\LogPage.xaml.cs">
+			<DependentUpon>LogPage.xaml</DependentUpon>
+		</Compile>
 	</ItemGroup>
 
 </Project>

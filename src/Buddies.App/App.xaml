@@ -7,7 +7,6 @@
 	
 	<Application.Resources>
 		<ResourceDictionary>
-
 			<ResourceDictionary.MergedDictionaries>
 				
 				<!-- Styles -->
@@ -18,8 +17,7 @@
 				<ResourceDictionary Source="Resources/Templates/WavesTemplate.xaml" />
 				<ResourceDictionary Source="Resources/Templates/ControlGroupTemplate.xaml" />
 
-			</ResourceDictionary.MergedDictionaries>
-			
+			</ResourceDictionary.MergedDictionaries>			
 		</ResourceDictionary>
 	</Application.Resources>	
 </Application>

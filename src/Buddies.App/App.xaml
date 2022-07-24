@@ -59,8 +59,7 @@
 						</ContentPresenter>
 					</Grid>
 				</ScrollView>
-			</ControlTemplate>
-			
+			</ControlTemplate>			
 		</ResourceDictionary>
 	</Application.Resources>	
 </Application>

@@ -1,6 +1,6 @@
 ﻿namespace Buddies.Logs.Abstractions.Sections;
 
-public abstract class SectionLog
+public abstract record class SectionLog
 {
 	public SectionLog(Log log)
 	{

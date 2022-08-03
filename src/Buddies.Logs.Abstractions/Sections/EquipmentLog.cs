@@ -17,9 +17,7 @@ public record class EquipmentLog : SectionLog
 
 	public WeightBuoyancyType? Buoyancy { get; set; }
 
-	public CylinderType? CylinderType { get; set; }
-
-	public byte CylinderSize { get; set; }
+	public DiveCylinder? Cylinder { get; set; }
 
 	public DiveGasMixture? GasMixture { get; set; }
 

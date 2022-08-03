@@ -4,9 +4,10 @@ public enum GasMixtureType
 {
 	Air = 0,
 	Enriched,
-	Trimex,
+	Trimix,
 	Heliox,
 	Hydrox,
+	Hydreliox,
 	Rebreather,
 	Other,
 }

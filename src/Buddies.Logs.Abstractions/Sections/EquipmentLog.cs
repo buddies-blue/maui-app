@@ -1,4 +1,5 @@
-﻿using Buddies.Logs.Abstractions.Enums;
+﻿using Buddies.Logs.Abstractions.Entities;
+using Buddies.Logs.Abstractions.Enums;
 
 namespace Buddies.Logs.Abstractions.Sections;
 
@@ -22,15 +23,7 @@ public record class EquipmentLog : SectionLog
 
 	public byte CylinderSize { get; set; }
 
-	public GasMixtureType? GasMixture { get; set; }
-
-	public byte? OxygenPercentage { get; set; }
-
-	public byte? NitrogenPercentage { get; set; }
-
-	public byte? HeliumPercentage { get; set; }
-
-	public byte? HydrogenPercentage { get; set; }
+	public DiveGasMixture? GasMixture { get; set; }
 
 	public ushort StartingPressure { get; set; }
 

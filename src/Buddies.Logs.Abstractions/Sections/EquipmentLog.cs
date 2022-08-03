@@ -11,9 +11,7 @@ public record class EquipmentLog : SectionLog
 
 	}
 
-	public ExposureSuitType? SuitType { get; set; }
-
-	public byte SuitThickness { get; set; }
+	public DiveSuit? Suit { get; set; }
 
 	public double Weight { get; set; }
 

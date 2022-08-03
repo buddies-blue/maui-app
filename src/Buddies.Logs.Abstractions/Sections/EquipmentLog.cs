@@ -24,4 +24,6 @@ public record class EquipmentLog : SectionLog
 	public ushort StartingPressure { get; set; }
 
 	public ushort EndingPressure { get; set; }
+
+	public ushort GasConsumption => (ushort)(StartingPressure - EndingPressure);
 }
